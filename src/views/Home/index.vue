@@ -1,5 +1,6 @@
 <template>
   <div class="page-home">
+    <!-- 头部 -->
     <header class="index-header">
       <a href="">
         <div class="header-user">
@@ -11,13 +12,22 @@
         <div class="header-search"></div>
       </a>
     </header>
-    <div class="banner" style="background:pink;height: 150px;"></div>
+    <!-- 头部 end -->
+
+    <!-- banner -->
+    <Swiper />
+    <!-- banner end -->
   </div>
 </template>
 
 <script>
+import Swiper from '@/components/Swiper'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    Swiper
+  }
 }
 </script>
 
@@ -34,22 +44,22 @@ export default {
   height: 44px;
   justify-content: space-between;
   align-items: center;
-  .user-btn{
+  .user-btn {
     width: 25px;
     height: 25px;
-    background: url("../../assets/icon/user-btn.png") no-repeat center center;
+    background: url('../../assets/icon/user-btn.png') no-repeat center center;
     background-size: 100%;
   }
-  .header-logo{
+  .header-logo {
     width: 92px;
     height: 28px;
-    background: url("../../assets/icon/logo.png") no-repeat center center;
+    background: url('../../assets/icon/logo.png') no-repeat center center;
     background-size: 100%;
   }
-  .header-search{
+  .header-search {
     height: 25px;
     width: 25px;
-    background: url("../../assets/icon/scoat.png") no-repeat center center;
+    background: url('../../assets/icon/scoat.png') no-repeat center center;
     background-size: 100%;
   }
 }

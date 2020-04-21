@@ -126,5 +126,7 @@ table {
 html,
 body,
 #app {
+  max-width: 540px;
+  margin: 0 auto;
   height: 100%;
 }
